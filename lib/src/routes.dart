@@ -8,8 +8,8 @@ class MyPackageRoutes {
   static const String screen2 = '/screen2';
   static const String screen3 = '/screen3';
 
-  static Route<dynamic>? generateRoute(RouteSettings settings) {
-    switch (settings.name) {
+  static Route<dynamic>? generateRoute(RouteSettings? settings) {
+    switch (settings?.name) {
       case screen1:
         return MaterialPageRoute(builder: (_) => Screen1());
       case screen2:
